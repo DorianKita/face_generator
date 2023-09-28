@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Face generator</title>
 </head>
 <body>
-    
+    <form id="form">
+        <select id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select>
+        <select id="ethnicity">
+            <option value="european">European</option>
+            <option value="african">African</option>
+            <option value="east_asian">Asian</option>
+        </select>
+        <label>Age (0-70): <input type="text" required id="age"></label>
+        <button type="submit">Generate</button>
+    </form>
+
     <script src="app.js"></script>
 </body>
 </html>
